@@ -75,6 +75,8 @@ and navigate my browser to http://localhost:3001.  This pops up:
 
 ![hub](img/hub.png)
 
+(The tools shown above will be covered in a later chapter)
+
 The main page serves as a hub for me and the team, to provide links to the
 game, tools, and other team-related items elsewhere on the web.
 
