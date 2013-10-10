@@ -86,6 +86,30 @@ to run the game on mobile.  Since the webserver is running from this directory,
 I just point the CocoonJS Launcher on my phone to the URL:
 http://localhost:3001/cocoon.zip.
 
+#### Debugging
+
+Looking back, I am bewildered that I never used an actual debugger to place
+breakpoints to check state or step through the code.  I may be forgetting a few
+times that I had used it, but my usual process was to look at stack traces when
+the game crashed and to use `console.log` and `console.error` functions to
+print helpful messages.
+
+My favorite browser console is in Chrome, plainly due to its larger console
+buffer, easier message filtering, and auto-clearing on refresh.  The CocoonJS
+Launcher has a good console for debugging on mobile as well.
+
+![consoles](img/consoles.png)
+
+CocoonJS Launcher has a Memory Log for viewing memory usage of textures.  I emailed
+their support team for a similar log for Vector Path images, and they agreed it
+would be useful, so it might come.
+
+CocoonJS Launcher also allows you to [profile your
+game](http://wiki.ludei.com/cocoonjs:launcherprofile), which confirmed to me
+that true type fonts are still very slow, among other things.
+
+![profiler](http://wiki.ludei.com/_media/cocoonjs:captura_de_pantalla_2013-02-04_a_la_s_14.04.20.png?cache=)
+
 ### Publishing to Team
 
 #### Syncing and Backing Up Changes
