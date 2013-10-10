@@ -52,6 +52,12 @@ This is a preview of the `gitk` command, a history visualizer:
 
 ![gitk](img/gitk.png)
 
+Another benefit is that I can perform some analytics on my project history.
+For example, I used [this setup](work/git-heatmap) to create this visualization
+of the number of code commits I made each day:
+
+![git-heatmap](img/git-heatmap.png)
+
 ### Programming Environment
 
 There's nothing too fancy about my programming environment.  It is a directory
