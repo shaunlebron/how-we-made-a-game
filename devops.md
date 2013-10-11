@@ -133,6 +133,8 @@ update thereby completely disrupting the backup process.
 The aforementioned hook also pushes the received changes to a private
 [bitbucket](https://bitbucket.org) repository as an automated backup process.
 
+![git-flow](img/git-flow.png)
+
 #### Webserver setup
 
 On the webserver, I use the [forever](https://npmjs.org/package/forever) tool
