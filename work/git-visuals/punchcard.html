@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+<script src="js/punchcard.js"></script>
+</head>
+<body>
+<div>
+	<canvas id='canvas-before'></canvas>
+</div>
+<div>
+	<canvas id='canvas-after'></canvas>
+</div>
+<script>
+	window.addEventListener('load', function() {
+		$.getJSON( "commit-timestamps.json", function( data ) {
+			var before = {};
+			var after = {};
+
+			var t,d;
+			var quitDate = new Date(2013,3,24);
+			for (t in data) {
+				d = new Date(parseInt(t)*1000);
+				if (d < quitDate) {
+					before[t] = 1;
+				}
+				else {
+					after[t] = 1;
+				}
+			}
+
+			Punchcard.create('canvas-before', 1000, before);
+			Punchcard.create('canvas-after', 1000, after);
+		});
+	});
+</script>
+</body>
+</html>

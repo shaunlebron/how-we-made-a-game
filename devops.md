@@ -52,11 +52,33 @@ This is a preview of the `gitk` command, a history visualizer:
 
 ![gitk](img/gitk.png)
 
-Another benefit is that I can perform some analytics on my project history.
-For example, I used [this setup](work/git-heatmap) to create this visualization
-of the number of code commits I made each day:
+#### Analytics
+
+Another benefit of tracking development is that I can perform some analytics on
+my project history.
+
+This is a visualization of the number of code commits I made each day:
 
 ![git-heatmap](img/git-heatmap.png)
+
+This graph is really interesting to me, because I can see how much work I
+accomplished in May after quitting my job to work full-time on the game.  You
+can see that I burned out pretty hard in June because I worked almost every
+single day in May.
+
+I can also visualize the time distribution of my commits.  You can see I stayed
+up pretty late, and I came in pretty late to work on Mondays because i was
+apparently getting some last minute work done in the mornings.
+
+__before I quit my job__
+
+![git-punchchard-before](img/git-punchcard-before.png)
+
+__after I quit my job__
+
+![git-punchchard-after](img/git-punchcard-after.png)
+
+You can see how these graphs were created in [this workspace](work/git-visuals).
 
 ### Programming Environment
 
