@@ -170,3 +170,4 @@ On top of that, I run an [nginx](http://wiki.nginx.org/) webserver on the VPS
 to appropriately direct traffic to the Node server using proxy-pass. I further
 configure it with password protection so that only team members may access it.
 
+![server](img/server.png)
