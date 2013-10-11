@@ -1,8 +1,6 @@
 How we made a game
 ==================
 
-![title](img/title.png)
-
 ![hub](img/hub.png)
 
 ### Pterodactyl Attack
