@@ -4,7 +4,7 @@ __TL;DR__ The game/tools are written from the terminal, tracked by Git, pushed
 to a private server where the team can view it from a web browser on their PCs,
 or on their phones with CocoonJS Launcher.
 
-
+----
 
 This section is an overview of our Developer Operations (DevOps).  I've
 struggled to define exactly what that means for us, but I consider it to be the
