@@ -1,8 +1,8 @@
 # DevOps - backbone of development
 
-__TL;DR__ The game/tools are written from the terminal, tracked by Git, pushed
-to a private server where the team can view it from a web browser on their PCs,
-or on their phones with CocoonJS Launcher.
+__TL;DR__ The game & tools run on a central password-protected website for all
+team members to be in sync.  Our phones/tablets pull the latest version each
+time we test the game.
 
 ----
 
