@@ -1,30 +1,27 @@
 How we made a game
 ==================
 
+__TL;DR__ Took 9 months to make a game called Pterodactyl Attack from scratch
+with no experience. ([gameplay video](http://youtu.be/uDx9aQIYfP8?t=16s)) Now
+I'm writing about what happened.
+
 ![hub](img/hub.png)
 
-### Pterodactyl Attack
+### Intro
 
-Hello, I'm [Shaun](http://twitter.com/shaunewilliams), the programmer for
-__Pterodactyl Attack__, an indie game for iOS/Android.  We at Hygoon worked on
-this title from Jan 2013 to Sep 2013.  It will be released soon.
+Hello, I'm [Shaun](http://twitter.com), the programmer for __Pterodactyl
+Attack__, an indie game for iOS/Android.  We at Hygoon worked on this title
+from Jan 2013 to Sep 2013.  It will be released soon on App Store, and later on
+Google Play.
 
-### What tech?  Is it open source?
-
-The game and tools were developed from scratch in Javascript for HTML5
-Canvas2D.  The code will be made free and open source some time after its
-release, a la _id software_.
-
-### Why are you writing so much about it?
-
-This was our first game.  I feel compelled to write these articles because I
-find the experience of developement to be at least as interesting as the
+I find the experience of developement to be at least as interesting as the
 resulting game itself.
 
-## Table of Contents (tentative)
+The game and tools were developed from scratch in __javascript__ for __HTML5
+Canvas2D__.  The code will be made free and open source some time after its
+release, a la _id software_.
 
-(These articles are a work in progress and will be published to
-[http://hygoon.com](http://hygoon.com) when completed.)
+### Articles
 
 - [X] [Chapter 0 - DevOps](devops.md)
 - [ ] Chapter 1 - Core Code Structure
