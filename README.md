@@ -24,7 +24,7 @@ I find the experience of developement to be as interesting as the resulting
 game itself.  So here are some articles that I am currently working on.
 
 - [X] [Chapter 0 - DevOps](devops.md)
-- [ ] Chapter 1 - Core Code Structure
+- [ ] [Chapter 1 - Code Architecture](architecture.md)
 - [ ] Chapter 2 - Drawing in 2D/3D
 - [ ] Chapter 3 - Pterodactyl Paths
 - [ ] Chapter 4 - Textures (Vectors & Bitmaps)
