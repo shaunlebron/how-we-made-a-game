@@ -23,15 +23,16 @@ release, a la _id software_.
 I find the experience of developement to be as interesting as the resulting
 game itself.  So here are some articles that I am currently working on.
 
-- [X] [Chapter 0 - DevOps](devops.md)
-- [ ] [Chapter 1 - Code Architecture](architecture.md)
-- [ ] Chapter 2 - Drawing in 2D/3D
-- [ ] Chapter 3 - Pterodactyl Paths
-- [ ] Chapter 4 - Textures (Vectors & Bitmaps)
-- [ ] Chapter 5 - Environment Backgrounds
-- [ ] Chapter 6 - Menus
-- [ ] Chapter 7 - Aiming Mechanic
-- [ ] Chapter 8 - Gameplay Design
-- [ ] Chapter 9 - The tutorial
-- [ ] Chapter 10 - The surprise
-- [ ] Chapter 11 - Stress and its impacts
+- [X] [DevOps](devops.md)
+- [ ] [File Overview](files.md)
+- [ ] [Architecture](architecture.md)
+- [ ] Drawing in 2D/3D
+- [ ] Pterodactyl Paths
+- [ ] Textures (Vectors & Bitmaps)
+- [ ] Environment Backgrounds
+- [ ] Menus
+- [ ] Aiming Mechanic
+- [ ] Gameplay Design
+- [ ] The tutorial
+- [ ] The surprise
+- [ ] Stress and its impacts
