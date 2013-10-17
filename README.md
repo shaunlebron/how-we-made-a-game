@@ -1,11 +1,10 @@
 How we made a game
 ==================
 
-__TL;DR__: Took 9 months to make the game [Pterodactyl
+__TL;DR__: We spent a long time making the game [Pterodactyl
 Attack](http://youtu.be/uDx9aQIYfP8?t=30s) from scratch with no experience.
-Now I'm sharing how.
 
-![hub](img/hub.png)
+![montage](img/montage.jpg)
 
 ### Intro
 
