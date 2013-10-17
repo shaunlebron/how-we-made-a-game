@@ -37,7 +37,15 @@ Each HTML file references all the core engine code as well as the specific code
 to its program.  Each HTML file also includes code for defining and formatting
 the visual interface elements of the page.
 
-![html-overview](img/html-overview.png)
+### The Canvas
+
+A "canvas" is included in each of the game and tool pages.  The whole game
+display and parts of the tool interface are drawn inside this canvas.
+
+Below, the canvas is highlighted in red on each of the game and tool pages.
+All of the interface items outside of the canvas are separate HTML elements.
+
+![canvas](img/canvas.png)
 
 ## CocoonJS files
 
