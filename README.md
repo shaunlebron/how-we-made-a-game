@@ -22,7 +22,8 @@ release, a la _id software_.
 I find the experience of developement to be as interesting as the resulting
 game itself.  So here are some articles that I am currently working on.
 
-- [X] [DevOps](devops.md)
+- [X] [Quick Look](quick-look.md)
+- [X] [Operations](devops.md)
 - [ ] [File Overview](files.md)
 - [ ] [Architecture](architecture.md)
 - [ ] Drawing in 2D/3D

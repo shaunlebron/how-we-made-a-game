@@ -12,28 +12,6 @@ technology that _supported_ the process of our development.  It's the backbone
 of our workflow that evolved over time.  So, I'll cover the processes in which
 we develop, test, share, backup the game, and other things.
 
-## How the game runs
-
-The game is built on HTML5 Canvas and Javascript, meaning we can simply play it
-in a web browser.
-
-![browser](img/browser.png)
-
-But the game is really intended as a mobile game for phones and tablets.  So we
-primarily run it with the [CocoonJS Launcher for
-iOS/Android](http://wiki.ludei.com/cocoonjs:launcherapp).  This is done by
-giving the launcher a zip file containing all the webpage files for our game.
-
-![cocoon](img/cocoon.png)
-
-When we're ready to release the game, CocoonJS will take our zip file and turn
-it into a native app that we can put on App Store or Google Play.
-
-#### Easy access through a Private Web Server
-
-The team accesses the latest version of the game from their web browsers and phones
-by just using a private URL that goes to our web server hosting our content.
-
 ## Team Workflow
 
 I am the sole programmer on the team.  Art assets are handed to me to integrate
