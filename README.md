@@ -7,8 +7,11 @@ Attack](http://youtu.be/uDx9aQIYfP8?t=30s) from scratch with no experience.
 ![montage](img/montage.jpg)
 
 __Pterodactyl Attack__ is an indie game coming to App Store and Google Play.
-It was developed from scratch in plain javascript and HTML5 canvas.  Its source
-code will be made free and open source some time after its release.
+It was developed in plain javascript and HTML5 canvas.  Its source code will be
+made free and open source some time after its release.
+
+You can consider the following articles a formal walkthrough of our development
+process.  You can read our free-form [devblog here](http://dailies.hygoon.com).
 
 - [X] [Quick Look](quick-look.md)
 - [X] [Operations](devops.md)
