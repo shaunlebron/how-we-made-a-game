@@ -2,12 +2,22 @@
 
 This is an overview of the core code used by the game and tools.
 
+## Main
+
+There is a "main" module for the game and each tool that coordinates modules
+for initialization:
+
+- initializes the screen
+- starts the loading screen
+- starts loading all assets
+- triggers initialization events and starts executive when assets are loaded
+
 ## Screen
 
 There is a screen module which controls:
 
-- canvas size
-- camera position and scaling
+- screen resolution
+- camera offset and scale
 - screen shaking
 - conversion between our space and screen coordinates
 
@@ -15,17 +25,17 @@ There is a screen module which controls:
 
 There is an assets module which contains:
 
-- list of asset file locations and types
-- logic for building usable structures from assets
+- list of asset file paths and types
+- logic for building game structures from assets
 - logic for loading all assets at once
 
 ## Executive
 
 There is an executive module that controls:
 
-- main loop
+- the main loop
 - variable update rate
-- computed framerate display
+- display of the computed framerate
 - execution speed for slowmo and pausing
 
 ## Scenes
@@ -39,6 +49,13 @@ execution.  It has the following functions:
 - cleanup (called when we switch to another scene)
 
 ## Sprites
+
+There are various sprite classes which provide structures for:
+
+- atlases ("packed" & "table" versions)
+- bitmap fonts
+- vector sprites
+- z-sorting for correct drawing order
 
 ## Input
 
