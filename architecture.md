@@ -12,7 +12,21 @@ requestAnimationFrame), and accepts control through the input events.
 
 ![flow-events](img/flow-events.png)
 
+### Engine Start
+
+The engine is started from the "main" module.
+
+![flow-init](img/flow-init.png)
+
+### Engine Update & Draw
+
+The engine updates through the "executive" module.
+
+![flow-update](img/flow-update.png)
+
 ## Architecture
+
+This is a description of the core modules in the engine.
 
 ### Main
 
