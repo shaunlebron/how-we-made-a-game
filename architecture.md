@@ -1,8 +1,20 @@
-# Core Code Structure
+# Core Flow and Architecture
 
 This is an overview of the core code used by the game and tools.
 
-## Main
+## Flow
+
+The game engine is written in Javascript, so its architecture must operate
+around javascript's [event
+queue](http://javascript.info/tutorial/events-and-timing-depth).  The game is
+started by the onload event, updated and drawn by the repaint event (through
+requestAnimationFrame), and accepts control through the input events.
+
+![flow-events](img/flow-events.png)
+
+## Architecture
+
+### Main
 
 There is a "main" module for the game and each tool that coordinates modules
 for initialization:
@@ -12,16 +24,17 @@ for initialization:
 - starts loading all assets
 - triggers initialization events and starts executive when assets are loaded
 
-## Screen
+### Screen
 
 There is a screen module which controls:
 
 - screen resolution
 - camera offset and scale
 - screen shaking
+- 3D frustum
 - conversion between our space and screen coordinates
 
-## Assets
+### Assets
 
 There is an assets module which contains:
 
@@ -29,7 +42,7 @@ There is an assets module which contains:
 - logic for building game structures from assets
 - logic for loading all assets at once
 
-## Executive
+### Executive
 
 There is an executive module that controls:
 
@@ -38,7 +51,7 @@ There is an executive module that controls:
 - display of the computed framerate
 - execution speed for slowmo and pausing
 
-## Scenes
+### Scenes
 
 A scene is any object that can be plugged into the main loop as a unit of
 execution.  It has the following functions:
@@ -48,22 +61,13 @@ execution.  It has the following functions:
 - draw (called every frame with canvas context)
 - cleanup (called when we switch to another scene)
 
-## Sprites
-
-There are various sprite classes which provide structures for:
-
-- atlases ("packed" & "table" versions)
-- bitmap fonts
-- vector sprites
-- z-sorting for correct drawing order
-
-## Input
+### Input
 
 There is an input module which provides:
 
 - touch/mouse events in screen or space coordinates
 
-## Settings
+### Settings
 
 There is a settings module that provides:
 

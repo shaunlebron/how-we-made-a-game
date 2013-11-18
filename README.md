@@ -16,7 +16,7 @@ process.  You can read our free-form [devblog here](http://dailies.hygoon.com).
 - [X] [Quick Look](quick-look.md)
 - [X] [Operations](devops.md)
 - [X] [File Overview](files.md)
-- [ ] [Architecture](architecture.md)
+- [ ] [Core Flow and Architecture](architecture.md)
 - [ ] Drawing in 2D/3D
 - [ ] Pterodactyl Paths
 - [ ] Textures (Vectors & Bitmaps)
