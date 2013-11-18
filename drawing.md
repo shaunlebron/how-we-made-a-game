@@ -32,6 +32,13 @@ for layouts that adapt to different aspect ratio screens.
 When dealing with 3D space, we use normalized frustum coordinates, with the
 near plane at z=1.
 
+### Conversion
+
+The following conversion process is employed when drawing to produce pixel
+locations on the canvas.
+
+![coord-convert](img/coord-convert.png)
+
 ## Drawing
 
 ### Billboards
