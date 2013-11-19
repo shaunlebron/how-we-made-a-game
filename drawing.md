@@ -23,6 +23,8 @@ canvas coordinates instead of the canvas coordinates based on pixels.  The
 height of this normalized canvas is always locked at 720, but its width varies
 with the aspect ratios for different devices.
 
+![coord-norm](img/coord-norm.png)
+
 ### Layout Coordinates
 
 When placing images on the screen for the HUD or menus, we use layout coordinates.
