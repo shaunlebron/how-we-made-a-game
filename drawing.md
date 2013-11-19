@@ -38,6 +38,8 @@ for layouts that adapt to different aspect ratio screens.
 When dealing with 3D space, we use normalized frustum coordinates, with the
 near plane at z=1.
 
+![coord-frustum](img/coord-frustum.png)
+
 ### Conversion
 
 The following conversion process is employed when drawing to produce pixel
