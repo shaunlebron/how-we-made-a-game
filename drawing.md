@@ -31,6 +31,8 @@ When placing images on the screen for the HUD or menus, we use layout coordinate
 The width and height are set to 1.  This creates a percentage placement of items
 for layouts that adapt to different aspect ratio screens.
 
+![coord-frac](img/coord-frac.png)
+
 ### Frustum Space
 
 When dealing with 3D space, we use normalized frustum coordinates, with the
