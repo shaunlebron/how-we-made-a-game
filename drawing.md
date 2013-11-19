@@ -14,6 +14,8 @@ The game is drawn to a canvas.  On mobile devices, the canvas size is simply
 matched to the screen's size.  Thus, the canvas size will vary from device to
 device.
 
+![coord-canvas](img/coord-canvas.png)
+
 ### Normalized Canvas Coordinates
 
 In order to simplify the drawing on different size screens, we use normalized
