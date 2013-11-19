@@ -33,10 +33,11 @@ for layouts that adapt to different aspect ratio screens.
 
 ![coord-frac](img/coord-frac.png)
 
-### Frustum Space
+### 3D Space Coordinates
 
 When dealing with 3D space, we use normalized frustum coordinates, with the
-near plane at z=1.
+near plane at z=1.  The vertical field of view (FoV) is always 30º, but the
+horizontal FoV will vary from device to device depending on its aspect ratio.
 
 ![coord-frustum](img/coord-frustum.png)
 
