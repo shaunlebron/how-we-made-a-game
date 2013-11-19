@@ -41,13 +41,6 @@ horizontal FoV will vary from device to device depending on its aspect ratio.
 
 ![coord-frustum](img/coord-frustum.png)
 
-### Conversion
-
-The following conversion process is employed when drawing to produce pixel
-locations on the canvas.
-
-![coord-convert](img/coord-convert.png)
-
 ## Drawing
 
 ### Billboards
