@@ -17,7 +17,7 @@ process.  You can read our free-form [devblog here](http://dailies.hygoon.com).
 - [X] [Operations](devops.md)
 - [X] [File Overview](files.md)
 - [X] [Core Flow and Architecture](architecture.md)
-- [ ] [Drawing to the Screen](drawing.md)
+- [X] [Drawing to the Screen](drawing.md)
 - [ ] Pterodactyl Paths
 - [ ] Textures (Vectors & Bitmaps)
 - [ ] Environment Backgrounds
