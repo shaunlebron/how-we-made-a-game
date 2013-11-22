@@ -55,10 +55,32 @@ XY coordinates by Z, a simple 3D -> 2D perspective transformation.
 
 ### Billboards
 
-### Sprites
+To draw an image on the screen at a certain position, we draw it in a so-called
+"billboard".  You can think of it as a front-facing picture frame that you can
+move around in 3D space.
 
-### Text
+#### Size
 
-### HUD-placement
+The size of the billboard is defined in window coordinates.  Keep in mind that
+this is the size of the billboard when it is flush against the screen.  Its
+apparent size will diminish as expected if it is positioned further out in
+space.
 
-### Screen-shaking
+#### Alignment
+
+The alignment of the billboard is controlled by a relative "anchor" point.  For
+example, if we want a billboard to be center-aligned, then its anchor is at the
+center of the image.  If we want a billboard to be right-aligned, then its
+anchor is at the right side of the image.
+
+(The anchor point is defined in window coordinates, relative to the top-left of the image.)
+
+#### Position
+
+We move the billboard to a given position by "anchoring" it there at its anchor
+point.  The position can be defined in "layout", "window", or "space"
+coordinates.
+
+#### Scale
+
+We can modify the scale of the billboard to enlarge or shrink it.
