@@ -90,4 +90,5 @@ coordinates.
 
 We can modify the scale of the billboard to enlarge or shrink it.
 
-![billboard-scale](img/billboard-scale.png)
+![billboard-scale](img/billboard-scale.gif)
+
