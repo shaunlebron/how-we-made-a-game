@@ -55,9 +55,10 @@ XY coordinates by Z, a simple 3D -> 2D perspective transformation.
 
 ### Billboards
 
-To draw an image on the screen at a certain position, we draw it in a so-called
-"billboard".  You can think of it as a front-facing picture frame that you can
-move around in 3D space.
+We define a "billboard" to simplify the task of drawing an image with a given
+position, alignment and size.  You can think of it as a picture frame that you
+can move around in 3D space, as long as it is facing forward.  The methods in
+the billboard calculate pixel positions from the properties discussed next.
 
 #### Size
 
@@ -65,6 +66,8 @@ The size of the billboard is defined in window coordinates.  Keep in mind that
 this is the size of the billboard when it is flush against the screen.  Its
 apparent size will diminish as expected if it is positioned further out in
 space.
+
+![billboard-size](img/billboard-size.png)
 
 #### Alignment
 
