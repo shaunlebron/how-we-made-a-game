@@ -69,20 +69,22 @@ space.
 
 ![billboard-size](img/billboard-size.png)
 
-#### Alignment
+#### Alignment and Position
 
 The alignment of the billboard is controlled by a relative "anchor" point.  For
 example, if we want a billboard to be center-aligned, then its anchor is at the
 center of the image.  If we want a billboard to be right-aligned, then its
 anchor is at the right side of the image.
 
-(The anchor point is defined in window coordinates, relative to the top-left of the image.)
+![billboard-anchor](img/billboard-anchor.png)
 
-#### Position
+(The anchor point is defined in window coordinates, relative to the top-left of the image.)
 
 We move the billboard to a given position by "anchoring" it there at its anchor
 point.  The position can be defined in "layout", "window", or "space"
 coordinates.
+
+![billboard-position](img/billboard-position.png)
 
 #### Scale
 
