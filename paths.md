@@ -4,6 +4,8 @@ In this game, pterodactyls fly toward you along predefined paths.  Here, we
 will discuss the nature of these paths and the tool we built for constructing
 them.
 
+![path-preview](img/path-preview.png)
+
 ## A Smooth Path
 
 To create a simple smooth path for the pterodactyls, we used something called
