@@ -18,7 +18,7 @@ process.  You can read our free-form [devblog here](http://dailies.hygoon.com).
 - [X] [File Overview](files.md)
 - [X] [Core Flow and Architecture](architecture.md)
 - [X] [Drawing to the Screen](drawing.md)
-- [ ] Pterodactyl Paths
+- [ ] [Pterodactyl Paths](paths.md)
 - [ ] Textures (Vectors & Bitmaps)
 - [ ] Environment Backgrounds
 - [ ] Menus
