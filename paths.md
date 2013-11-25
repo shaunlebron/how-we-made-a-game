@@ -8,20 +8,18 @@ them.
 
 ## A Smooth Path
 
-To create a simple smooth path for the pterodactyls, we used something called
-Catmull-Rom splines.  It allows us to animate the pterodactyl between a given
-set of points.  With each point is an associated time, representing when the
-pterodactyl should be at that location.
+To create a simple paths for the pterodactyls, we used something called Cubic
+Hermite splines.  It generates a complete smooth path from a set of timed
+waypoints.
 
-![path-catmullrom](img/path-catmullrom.png)
+![path-hermite](img/path-hermite.png)
 
-This was a good solution for creating very simple paths and helped simplify
-the tool requirements for creating them.  We opted for this instead of the
-industry standard method for animating objects along curves: a spatial Bezier
-Spline curve to control position, and a temportal Bezier Spline curve to
-control the speed.
+The curvature of the path changes depending on the timing at each waypoint.
 
-![path-bezier](img/path-bezier.png)
+![path-hermite](img/path-hermite.gif)
+
+This was a sufficient solution for us, and it helped simplify the tool
+requirements for creating smooth paths.
 
 ## The Tool
 
