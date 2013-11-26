@@ -8,13 +8,13 @@ them.
 
 ## A Smooth Path
 
-To create a simple paths for the pterodactyls, we used something called [Cubic
+To create a simple path for the pterodactyls, we used something called [Cubic
 Hermite splines](http://en.wikipedia.org/wiki/Cubic_Hermite_spline).  It
 generates a complete smooth path from a set of timed waypoints.
 
 ![path-hermite](img/path-hermite.png)
 
-The curvature of the path changes depending on the timing at each waypoint.
+The curvature of the path is dependent on the timing at each waypoint.
 
 ![path-hermite](img/path-hermite.gif)
 
@@ -29,8 +29,28 @@ admired for having beautiful enemy paths.
 
 ### Views
 
-Like any other 3D tool provides, Ptalaga provides three orthographic views and the
-perspective view.  This allows us to move the points from different perspectives
-to position them where we wanted.
+The tool provides different perspectives to allow the user to easily move the
+waypoints to any position in space.  It also allows the user to set the time
+for each waypoint at the bottom section of the window.  At the bottom left, you
+can see the control for changing the rotating of the pterodactyl at each
+waypoint.
 
 ![path-tool-views](img/path-tool-views.png)
+
+### Demo
+
+To learn more about how the tool is used, view this short demo video here:
+<http://youtu.be/2Tc6txawD4U>
+
+### Saving Paths
+
+The tool saves the path as a JSON file, which just holds information about each
+waypoint.  I place the JSON file in one of our game sub-directories and tell
+the engine to load that path into a library for a particular level at runtime.
+
+### Level Patterns
+
+The gameplay logic throws a random pterodactyl at you at decreasing intervals
+over time.  Each level has a group of pterodactyl paths that are chosen at
+random.  Then it launches some random type of pterodactyl along that path.
+
