@@ -15,9 +15,7 @@ giving the launcher a zip file containing all the webpage files for our game.
 When we're ready to release the game, CocoonJS will take our zip file and turn
 it into a native app that we can put on App Store or Google Play.
 
-Here's a video of the game:
-
-[![youtube video](img/youtube.png)](http://youtu.be/uDx9aQIYfP8?t=30s)
+Here's a video of the game: <http://youtu.be/L1H-uGl6C14>
 
 Some of the tools we use for developing the game are also built on HTML5 Canvas
 and Javascript, which will be covered in a later chapter.

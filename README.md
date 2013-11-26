@@ -11,7 +11,7 @@ It was developed in plain javascript and HTML5 canvas.  Its source code will be
 made free and open source some time after its release.
 
 You can consider the following articles a formal walkthrough of our development
-process.  You can read our free-form [devblog here](http://dailies.hygoon.com).
+process.  You can read our free-form [devblog here](http://hygoon.com/blog).
 
 - [X] [Quick Look](quick-look.md)
 - [X] [Operations](devops.md)
