@@ -19,7 +19,7 @@ process.  You can read our free-form [devblog here](http://hygoon.com/blog).
 - [X] [Core Flow and Architecture](architecture.md)
 - [X] [Drawing to the Screen](drawing.md)
 - [X] [Pterodactyl Paths](paths.md)
-- [ ] Textures (Vectors & Bitmaps)
+- [ ] [Textures (Vectors & Bitmaps)](textures.md)
 - [ ] Environment Backgrounds
 - [ ] Menus
 - [ ] Aiming Mechanic
