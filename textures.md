@@ -108,10 +108,12 @@ above.
 
 ### Fonts
 
-We initially used true type fonts in our game, but profiling our game revealed
+We initially used TrueType fonts in our game, but profiling our game revealed
 that they are very slow to draw.  So we purchased Glyph Designer to help create
-customized bitmap fonts for use in games.  We were able to create a script to
+customized bitmap fonts for use in our game.  We were able to create a script to
 convert their metadata file to a "mosaic" metadata file for use in our engine.
+
+![texture-font](img/texture-font.png)
 
 ## Vector Workflow
 
