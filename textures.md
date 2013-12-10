@@ -109,9 +109,10 @@ above.
 ### Fonts
 
 We initially used TrueType fonts in our game, but profiling our game revealed
-that they are very slow to draw.  So we purchased Glyph Designer to help create
-customized bitmap fonts for use in our game.  We were able to create a script to
-convert their metadata file to a "mosaic" metadata file for use in our engine.
+that they are very slow to draw.  So we purchased [Glyph
+Designer](http://71squared.com/en/glyphdesigner) to help create customized
+bitmap fonts for use in our game.  We were able to create a script to convert
+their metadata file to a "mosaic" metadata file for use in our engine.
 
 ![texture-font](img/texture-font.png)
 
