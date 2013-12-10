@@ -94,7 +94,7 @@ solution we used for the explosion that you can see below.  We also used it for
 the small animated sections of our backgrounds, which were made obsolete when
 we shifted to vector backgrounds.
 
-![texture-mosaic](img/texture-mosaic.png)
+![texture-mosaic](img/texture-mosaic.gif)
 
 ### Fonts
 
