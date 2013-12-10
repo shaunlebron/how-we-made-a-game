@@ -64,10 +64,12 @@ There are benefits to packing multiple textures into a single texture.
 Sometimes it helps with asset management to logically group related textures by
 combining them, especially frames of an animation.  It may also help with
 texture memory if you can pack a lot of small textures you want to pack
-together.  But perhaps most important is the fact that texture binding is
-expensive.  To draw a texture, you must first bind it.  So if you are drawing
-multiple textures, you will increase performance if you only have to do a
-single bind to draw them all.
+together.  
+
+But perhaps most important is the fact that texture binding is expensive.  To
+draw a texture, you must first bind it.  So if you are drawing multiple
+textures, you will increase performance if you only have to do a single bind to
+draw them all.
 
 The google-able word to describe these types of textures is "texture atlas".
 But I use very specific types of texture atlases which I call "tables" and
@@ -79,10 +81,15 @@ Tables were used in the first iteration of our texture packing tools.  A table
 has a number of rows and columns.  It consists of uniformly-sized cells to
 house separate textures.
 
+The example below is a texture containing a table of smaller textures.  Notice that each cell
+is the same size.
+
+![texture-table](img/texture-table.png)
+
 ### Mosaics
 
 Mosaics were the second iteration of our texture packing tools that we used to
-aggressively decrease the footprint of our certain animated bitmaps.
+aggressively decrease the footprint of certain animated bitmaps.
 
 ### Fonts
 
