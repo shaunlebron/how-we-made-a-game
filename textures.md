@@ -1,7 +1,7 @@
 # Textures
 
-We discussed previously how position images on the screen, but in this section
-we will discuss the types of images (textures) we can draw.
+We discussed previously how to position images on the screen, but in this
+section we will discuss the types of images (textures) we can draw.
 
 Our game engine supports different texture formats.  There are also special
 processes to convert the assets from our artists into our engine's supported
@@ -13,7 +13,7 @@ processes.
 Every image that we wish to put in our engine must have an associated metadata
 file so that the engine knows how to interpret it.  If we have an image named
 "logo.png", the engine expects a file named "logo.png.json" that will describe
-how its type and any additional information required to parse it.
+its type and any additional information required to parse it.
 
 ## Bitmaps vs Vectors
 
@@ -30,6 +30,8 @@ JPG).  Vector textures are composed of shapes (e.g. SVG).
 The most noticeable benefit of vector textures is that they inherently retain
 their quality across different scales.  This helped us to keep the pterodactyls
 looking smooth as they came flying toward the screen.
+
+![texture-scale](img/texture-scale.png)
 
 ### Overdraw
 
