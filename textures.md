@@ -96,6 +96,16 @@ we shifted to vector backgrounds.
 
 ![texture-mosaic](img/texture-mosaic.gif)
 
+We created a tool for authoring these "mosaics".  The tool accepts a series of
+images as input.  It then isolates contiguous regions of each image, performs a
+smart-merging strategy of the contiguous regions, then packs all the regions of
+all the images into a single image.  It also creates a metadata file noting the
+locations of each region and their original locations in their source images.
+This was useful for minimizing overdraw of bitmap animations as you can see
+above.
+
+[The Mosaic tool is available here on GitHub.](https://github.com/shaunew/HygoonMosaic)
+
 ### Fonts
 
 We initially used true type fonts in our game, but profiling our game revealed
