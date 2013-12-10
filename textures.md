@@ -89,7 +89,12 @@ is the same size.
 ### Mosaics
 
 Mosaics were the second iteration of our texture packing tools that we used to
-aggressively decrease the footprint of certain animated bitmaps.
+aggressively decrease the footprint of certain animated bitmaps.  This was a
+solution we used for the explosion that you can see below.  We also used it for
+the small animated sections of our backgrounds, which were made obsolete when
+we shifted to vector backgrounds.
+
+![texture-mosaic](img/texture-mosaic.png)
 
 ### Fonts
 
