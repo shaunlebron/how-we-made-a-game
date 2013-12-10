@@ -43,6 +43,8 @@ them as fullscreen bitmaps would create so much over-draw due to the large
 amount of transparent space being drawn.  Drawing them as vectors would
 minimize the amount of space being drawn.
 
+![texture-overdraw](img/texture-overdraw.png)
+
 ### Memory
 
 Using vectors also saves us texture memory since we are just storing vertices
