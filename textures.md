@@ -134,22 +134,69 @@ mixture of Canvas Path objects and calls.  In webkit browsers, we use SVG.
 ### SWF
 
 The pterodactyl animations were done in Adobe Flash and were handed to me in
-SWF format.  I was able to convert each frame of the animation into a separate
-SVG.
+SWF format.  I was able to upload the SWF to [Google Swiffy's web
+interface](https://www.google.com/doubleclick/studio/swiffy/) to produce an
+HTML5 page.  To extract the the SVG frames from this page, I wrote a script
+that you can find here: <https://gist.github.com/shaunew/7904683>
+
+I fear that this pipeline will be broken in the future since it relies on
+Google Swiffy which may be shut down.  There is no source code available for
+their SWF to SVG conversion.
 
 ### SVG
 
-SVG images can be drawn onto an HTML5 canvas in browsers, particularly well on
-Webkit browsers.  But the Firefox browser chokes on large SVG images.  CocoonJS
-does not support SVG images.
+All the still vector images that we use are exported in SVG format from Adobe
+Illustrator, which are sometimes edited slightly in Inkscape.  As discussed in
+the previous section, the animated SWF vector frames are exported to SVG with
+Swiffy.
+
+The SVG format is a standard vector image format that web browsers can display.
+Incidentally, SVG images can be drawn natively onto an HTML5 canvas in
+browsers, particularly well on Webkit.  So for webkit browsers, we directly use
+the SVG images when drawing to the screen.
+
+The Firefox browser seems to choke on large SVG images and CocoonJS has no
+support for them, so we must further convert SVG to another format in order to
+draw them for these platforms.
 
 ### Canvas Paths
 
-We convert SVG images into Canvas Paths (i.e. Canvas path function calls for
-building paths).  The HTML Canvas spec includes Path objects for caching path
-definitions so they can be drawn multiple times without calling the string of
-functions to rebuild it.  CocoonJS supports a subset of this spec, whereas
-browsers have been slow to implement it.  Safari 7 is the first browser to support
-it, and it came out 43 days ago at the time of this writing.
+Canvas paths are vector images that are drawn with Canvas Path API function
+calls.  It is supported by all browsers and CocoonJS as well.  The SVG format
+is very close to the primitives supported by Canvas Paths, so the folks at
+[canvg](http://code.google.com/p/canvg/) created a project for rendering SVG on
+with canvas paths.  I used a [repurposed version of this
+tool](http://www.omnisoftsystems.com/?returnUrl=/iTrax/Home/svg2Canvas/0) for
+easing the process of obtaining the canvas paths for an SVG.  I also stripped
+out the essential parts of it as an offline backup for our pipeline:
+<https://github.com/shaunew/Svg2Canvas>
 
+The [HTML Canvas spec includes Path
+objects](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#path-objects)
+for caching path definitions so they can be drawn multiple times without
+calling the string of functions to rebuild it.  It even includes a constructor
+spec that will build one from an SVG.
+
+CocoonJS supports a subset of this Path object spec, not including the easy SVG
+conversion constructor, whereas browsers have been slow to implement it.
+Safari 7 is the first browser to support it, and it came out 43 days ago at the
+time of this writing.
+
+#### A note on CocoonJS vector drawing
+
+I believe CocoonJS converts these canvas paths to vertex lists in OpenGL, at
+some sampling frequency. There is a noticeable delay when you first try to draw
+a vector image in the game, so to prevent those delays from disrupting the
+gameplay, I draw all the pterodactyls for a given level at the very beginning
+in an attempt to "cache" whatever vector information is needed to smoothly draw
+them in later frames.
+
+It is also worth nothing that CocoonJS does not support anti-aliasing of vector
+paths, meaning edges are jagged with visible pixel artifacts.  Thankfully, this
+effect is ameliorated by the Retina screens on iPhone and iPad.  But you can
+see the comparison below between the game in a browser (left) and the game on
+mobile through CocoonJS (right).  You may need to view full size of the image
+to notice:
+
+![texture-vector-antialias](img/texture-vector-antialias.png)
 
