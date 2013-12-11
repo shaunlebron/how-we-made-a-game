@@ -22,26 +22,33 @@ their differences.
 
 ### Composure
 
-Bitmaps are the conventional textures that are composed of pixels (e.g. PNG,
-JPG).  Vector textures are composed of shapes (e.g. SVG).
+Bitmaps (e.g. PNG, JPG) are the conventional textures that are composed of
+uniformly-sized squares called pixels.  Vector textures (e.g. SVG) are instead
+composed of a wide variety of curves and other shapes.
 
 ### Scaling
 
 The most noticeable benefit of vector textures is that they inherently retain
-their quality across different scales.  This helped us to keep the pterodactyls
-looking smooth as they came flying toward the screen.
+their quality across different scales.  This helped us to retain detail for the
+pterodactyls as they came flying toward the screen.
 
 ![texture-scale](img/texture-scale.png)
 
 ### Overdraw
 
-Drawing pixels is expensive. As a rule of thumb, you want to reduce the
-amount of pixels you draw, even transparent ones!
+As a rule of thumb, you want to reduce the amount of pixels you draw, even
+transparent ones!  Drawing pixels is expensive.
 
-Our backgrounds environments were composed of multiple large layers.  Drawing
-them as fullscreen bitmaps would create so much over-draw due to the large
-amount of transparent space being drawn.  Drawing them as vectors would
-minimize the amount of space being drawn.
+When we draw a bitmap to the screen, we are not able to skip the drawing of its
+transparent pixels.  So the cost incurred by drawing a bitmap is proportional
+to the entire area of the image.  But with vector images, we are only drawing
+pixels within the area of its curves.  This allows us to reduce the amount of
+pixels that we draw and makes our game faster.
+
+For example, our backgrounds environments are composed of multiple large
+layers.  In the visualization below, you can compare the amount of overdrawing
+that occurs for bitmaps versus vectors.  A bright red indicates a higher
+overdrawing pixel density.
 
 ![texture-overdraw](img/texture-overdraw.png)
 
@@ -63,8 +70,7 @@ any wasted space when they are stored in memory.
 There are benefits to packing multiple textures into a single texture.
 Sometimes it helps with asset management to logically group related textures by
 combining them, especially frames of an animation.  It may also help with
-texture memory if you can pack a lot of small textures you want to pack
-together.  
+texture memory if you can pack a lot of small textures together.
 
 But perhaps most important is the fact that texture binding is expensive.  To
 draw a texture, you must first bind it.  So if you are drawing multiple
@@ -81,30 +87,29 @@ Tables were used in the first iteration of our texture packing tools.  A table
 has a number of rows and columns.  It consists of uniformly-sized cells to
 house separate textures.
 
-The example below is a texture containing the animation frames for the baby
-pterodactyl.  Since each cell is the same size, we are able to deduce the
-position and size of each cell with a small amount of information in its
-metadata file.
+The example below is illustrates how we initially used a table to store the
+animation frames for the baby pterodactyl.  (We later dropped this when we
+moved to vector images).  Since each cell is the same size, we are able to
+deduce the position and size of each cell with a small amount of information in
+its metadata file.
 
 ![texture-table](img/texture-table.png)
 
 ### Mosaics
 
-Mosaics were the second iteration of our texture packing tools that we used to
-aggressively decrease the footprint of certain animated bitmaps.  This was a
-solution we used for the explosion that you can see below.  We also used it for
-the small animated sections of our backgrounds, which were made obsolete when
-we shifted to vector backgrounds.
+We define a "mosaic" as a densely packed texture of variously-sized cells.  We
+used this to aggressively decrease the footprint of certain animated bitmaps.
+For example, you can see how we stored an explosion animation below.  The
+"mosaic" is on the left and the animation on the right is pieced together from
+mosaic cells.
 
 ![texture-mosaic](img/texture-mosaic.gif)
 
-We created a tool for authoring these "mosaics".  The tool accepts a series of
+We created a tool for authoring these mosaics.  The tool accepts a series of
 images as input.  It then isolates contiguous regions of each image, performs a
-smart-merging strategy of the contiguous regions, then packs all the regions of
+smart-merging strategy of those contiguous regions, then packs all the regions of
 all the images into a single image.  It also creates a metadata file noting the
 locations of each region and their original locations in their source images.
-This was useful for minimizing overdraw of bitmap animations as you can see
-above.
 
 [The Mosaic tool is available here on GitHub.](https://github.com/shaunew/HygoonMosaic)
 
@@ -127,8 +132,8 @@ somehow.
 I created a workflow of tools to take SWF and SVG files and convert them into
 the different formats we needed for each browser and CocoonJS.
 
-In Firefox, we use Canvas Path calls to draw vectors.  In CocoonJS, we use a
-mixture of Canvas Path objects and calls.  In webkit browsers, we use SVG.
+In Firefox and CocoonJS, we use the Canvas Path API to draw vectors.  In webkit
+browsers, we use SVG.  See the diagram below for a summary of the pipeline.
 
 ![texture-vector-workflow](img/texture-vector-workflow.png)
 
@@ -164,17 +169,19 @@ draw them for these platforms.
 
 ### Canvas Paths
 
-Canvas paths are vector images that are drawn with Canvas Path API function
-calls.  It is supported by all browsers and CocoonJS as well.  The SVG format
-is very close to the primitives supported by Canvas Paths, so the folks at
+Canvas paths are vector images that are drawn with Canvas Path API.  It is
+supported by all browsers and CocoonJS as well.  The SVG format is very close
+to the primitives supported by Canvas Paths, so the folks at
 [canvg](http://code.google.com/p/canvg/) created a project for rendering SVG on
 with canvas paths.  I used a [repurposed version of this
 tool](http://www.omnisoftsystems.com/?returnUrl=/iTrax/Home/svg2Canvas/0) for
-easing the process of obtaining the canvas paths for an SVG.  I also stripped
-out the essential parts of it as an offline backup for our pipeline:
+easing the conversion process.  I also stripped out the essential parts of it
+to use as an offline backup for our pipeline:
 <https://github.com/shaunew/Svg2Canvas>
 
 ![texture-canvaspath](img/texture-canvaspath.png)
+
+#### Concerning future Path objects
 
 The [HTML Canvas spec includes Path
 objects](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#path-objects)
@@ -187,7 +194,7 @@ conversion constructor, whereas browsers have been slow to implement it.
 Safari 7 is the first browser to support it, and it came out 43 days ago at the
 time of this writing.
 
-#### A note on CocoonJS vector drawing
+#### Peculiarities of CocoonJS vector drawing
 
 I believe CocoonJS converts these canvas paths to vertex lists in OpenGL, at
 some sampling frequency. There is a noticeable delay when you first try to draw
@@ -205,3 +212,5 @@ to notice:
 
 ![texture-vector-antialias](img/texture-vector-antialias.png)
 
+Path objects are also blended additively rather than the usual alpha-blending
+in CocoonJS.  This is an issue I have reported to Ludei's support team.
