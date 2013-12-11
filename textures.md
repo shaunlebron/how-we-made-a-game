@@ -81,8 +81,9 @@ Tables were used in the first iteration of our texture packing tools.  A table
 has a number of rows and columns.  It consists of uniformly-sized cells to
 house separate textures.
 
-The example below is a texture containing a table of smaller textures.  Notice that each cell
-is the same size.
+The example below is a texture containing a table of smaller textures used for
+our menu (created by [game-icons.net](http://game-icons.net)).  Notice that
+each cell is the same size.
 
 ![texture-table](img/texture-table.png)
 
