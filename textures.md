@@ -146,9 +146,11 @@ their SWF to SVG conversion.
 ### SVG
 
 All the still vector images that we use are exported in SVG format from Adobe
-Illustrator, which are sometimes edited slightly in Inkscape.  As discussed in
-the previous section, the animated SWF vector frames are exported to SVG with
-Swiffy.
+Illustrator, which are sometimes edited slightly in Inkscape (see below).  As
+discussed in the previous section, the animated SWF vector frames are exported
+to SVG with Swiffy.
+
+![texture-inkscape](img/texture-inkscape.png)
 
 The SVG format is a standard vector image format that web browsers can display.
 Incidentally, SVG images can be drawn natively onto an HTML5 canvas in
