@@ -119,19 +119,23 @@ their metadata file to a "mosaic" metadata file for use in our engine.
 
 ## Vector Workflow
 
-Getting vectors into the game was a bit of an epic crisis.  I was getting assets
-from our artists in different formats that needed to be displayed in the engine somehow.
+Getting vectors into the game was a difficult challenge.  Our artists were
+producing assets in different formats that needed to be displayed in the engine
+somehow.
 
-So I created a workflow of tools to take SWF and SVG files and convert them into
+I created a workflow of tools to take SWF and SVG files and convert them into
 the different formats we needed for each browser and CocoonJS.
 
 In Firefox, we use Canvas Path calls to draw vectors.  In CocoonJS, we use a
 mixture of Canvas Path objects and calls.  In webkit browsers, we use SVG.
 
+![texture-vector-workflow](img/texture-vector-workflow.png)
+
 ### SWF
 
-The pterodactyl animations were done in flash format SWF.  I was able to
-convert each frame of the animation into a separate SVG.
+The pterodactyl animations were done in Adobe Flash and were handed to me in
+SWF format.  I was able to convert each frame of the animation into a separate
+SVG.
 
 ### SVG
 
