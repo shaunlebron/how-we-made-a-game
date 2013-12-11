@@ -139,8 +139,12 @@ browsers, we use SVG.  See the diagram below for a summary of the pipeline.
 
 ### SWF
 
-The pterodactyl animations were done in Adobe Flash and were handed to me in
-SWF format.  I was able to upload the SWF to [Google Swiffy's web
+The pterodactyl animations were done in Adobe Flash (see below) and were exported
+to me in SWF format.
+
+![texture-flash](img/texture-flash.jpg)
+
+I was able to upload the SWF to [Google Swiffy's web
 interface](https://www.google.com/doubleclick/studio/swiffy/) to produce an
 HTML5 page.  To extract the the SVG frames from this page, I wrote a script
 that you can find here: <https://gist.github.com/shaunew/7904683>
