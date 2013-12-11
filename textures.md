@@ -173,6 +173,8 @@ easing the process of obtaining the canvas paths for an SVG.  I also stripped
 out the essential parts of it as an offline backup for our pipeline:
 <https://github.com/shaunew/Svg2Canvas>
 
+![texture-canvaspath](img/texture-canvaspath.png)
+
 The [HTML Canvas spec includes Path
 objects](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#path-objects)
 for caching path definitions so they can be drawn multiple times without
