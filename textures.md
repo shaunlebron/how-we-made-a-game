@@ -93,7 +93,7 @@ moved to vector images).  Since each cell is the same size, we are able to
 deduce the position and size of each cell with a small amount of information in
 its metadata file.
 
-![texture-table](img/texture-table.png)
+![texture-table](img/texture-table.gif)
 
 ### Mosaics
 
