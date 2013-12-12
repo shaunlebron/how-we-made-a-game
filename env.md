@@ -28,7 +28,7 @@ or leaving a level.
 
 You may have noticed that some layers are wider than others.  This is to allow
 some layers to move wider distances for the animation.  You can see the
-animation here: <http://youtu.be/J7Bfhea2oDY>
+animation here: <http://youtu.be/eTPD1DZ-7fU>
 
 ### Collision
 
