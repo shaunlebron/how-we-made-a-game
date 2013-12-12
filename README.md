@@ -20,7 +20,7 @@ process.  You can read our free-form [devblog here](http://hygoon.com/blog).
 - [X] [Drawing to the Screen](drawing.md)
 - [X] [Pterodactyl Paths](paths.md)
 - [X] [Textures (Vectors & Bitmaps)](textures.md)
-- [ ] Environment Backgrounds
+- [ ] [Environment Backgrounds](env.md)
 - [ ] Menus
 - [ ] Aiming Mechanic
 - [ ] Gameplay Design
