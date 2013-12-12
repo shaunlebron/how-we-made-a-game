@@ -15,18 +15,20 @@ ice, and volcano.  You can see the layer composition of each below.
 
 ### Depths
 
-Each layer is placed in space at different depths, as you can see below.
+Each layer is placed at different depths, as you can see below.  Each
+highlighted layer below is shown in red and its position is shown in two
+perspectives of the viewing frustum in red also.
 
 ![env-depth.gif](img/env-depth.gif)
 
 ### Animations
 
-Each environment has an entrance/exit animation that is triggered when entering
+Each environment has an entrance/exit animation that is displayed when entering
 or leaving a level.
 
 You may have noticed that some layers are wider than others.  This is to allow
-some layers to move wider distances for the parallax animation.  You can see
-the animation here: <http://youtu.be/J7Bfhea2oDY>
+some layers to move wider distances for the animation.  You can see the
+animation here: <http://youtu.be/J7Bfhea2oDY>
 
 ### Collision
 
