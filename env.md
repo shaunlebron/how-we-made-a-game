@@ -44,7 +44,9 @@ intersection is contained in any of the collision polygons for that layer.
 ### Parallax
 
 When tilting the phone, the layers close to the screen move slightly to create
-a parallax effect to reinforce a perception of depth in the game.
+a parallax effect illustrated below:
+
+![env-parallax](img/env-parallax.gif)
 
 ## Workflow
 
