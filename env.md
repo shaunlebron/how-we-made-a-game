@@ -55,8 +55,12 @@ a parallax effect illustrated below:
 As we discussed in a previous article, there is a long conversion process that
 our background assets must go through before they can be drawn by our engine.
 
-Our artist draws all the layers in Adobe Illustrator and exports an SVG file to
-send to me.  I then run it through an automated background converter that
+Our artist draws all the layers in Adobe Illustrator (see below) and exports an
+SVG file to send to me.
+
+![env-adobe](img/env-adobe.png)
+
+I then run it through an automated background converter that
 splits all the top-level groups of the SVG file into the engine's supported
 formats for each layer.
 
