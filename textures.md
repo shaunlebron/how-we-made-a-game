@@ -76,7 +76,9 @@ always skirt this restriction by adding empty padding to meet the next highest
 power of 2.  But to minimize wasted texture memory we must downscale our images
 to the nearest power of 2 or simply design them to be that size.
 
-This is what the grid of supported texture sizes looks like.
+To visualize the space of possible texture sizes, see the grid below.  This
+grid pattern continues to a max size of 2048 or even 4096 on some mobile
+devices.
 
 ![texture-size](img/texture-size.png)
 
