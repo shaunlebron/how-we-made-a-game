@@ -83,6 +83,8 @@ customization.
 I created a tool called Baklava for customizing each of our environment's layer
 depth, animation, collision, and parallax properties.
 
+![env-tool](img/env-tool.png)
+
 #### Demo
 
 To learn more about how this tool is used, view this short demo video here:
