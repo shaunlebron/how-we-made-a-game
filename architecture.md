@@ -24,6 +24,15 @@ The engine updates through the "executive" module.
 
 ![flow-update](img/flow-update.png)
 
+### Scenes
+
+A scene defines what the game engine is currently focused on.  If the engine is
+focused on a scene, it is executing and displaying it and it only.  When it's
+time to execute and display a new scene, its focus must be redirected to said
+scene.
+
+Here are some example scenes used in the game.
+
 ## Architecture
 
 This is a description of the core modules in the engine.
