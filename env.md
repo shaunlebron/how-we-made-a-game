@@ -57,9 +57,8 @@ a parallax effect, illustrated below.
 
 ### Conversion
 
-As we discussed in a previous article, there is a long conversion process that
-our background assets must go through before they can be displayed in our
-engine.
+As we discussed in a previous article, there is a conversion process that our
+background assets must go through before they can be displayed in our engine.
 
 First, our artist draws all the layers in Adobe Illustrator (see below) and
 exports an SVG file to send to me.
@@ -70,14 +69,20 @@ Next, I run it through an automated background converter that splits all the
 top-level groups of the SVG file into separate layers.  Each SVG layer is dumped
 to a given directory, as well as converted to a Canvas Path image.
 
-![env-workflow](img/env-workflow.png)
+![env-convert](img/env-convert.png)
 
-Finally, the new background is primed and ready for customization.
+This conversion tool runs in the web browser because it relies on the modified
+Canvg library written in javascript.  It writes files to the local filesystem
+by pushing requests to a local NodeJS server created for this purpose.
+
+After this tool is done, the environment backgrounds are ready for
+customization.
 
 ### Customization
 
-I created a tool for customizing each of our environment's layer depth,
-animation, collision, and parallax properties.  I called it Baklava,
-after the pie that has many layers.
+I created a tool called Baklava for customizing each of our environment's layer
+depth, animation, collision, and parallax properties.
 
-View this video for a demonstration of the tool.
+#### Demo
+
+To learn more about how this tool is used, view this short demo video here:
