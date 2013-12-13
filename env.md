@@ -1,23 +1,27 @@
 # Environment Backgrounds
 
-The environments in our game consist of layered vector images that support
-linear animated movement, collision detection, and parallax motion from phone
-rotation.
+At the time of this writing, the game has three different environments:
+mountain, ice, and volcano.
+
+![env-preview](img/env-preview.png)
 
 ## Layers
 
+Each environment in the game consists of multiple layers of vector images that
+support linear animated movement, collision detection, and parallax motion from
+phone rotation.
+
 ### Composition
 
-At the time of this writing, we have three different environments: mountain,
-ice, and volcano.  You can see the layer composition of each below.
+Environments are composed of layers as seen below.
 
 ![env-types](img/env-types.gif)
 
 ### Depths
 
-Each layer is placed at different depths, as you can see below.  Each
-highlighted layer below is shown in red and its position is shown in two
-perspectives of the viewing frustum in red also.
+Each layer is placed at different depths.  Each highlighted layer below is
+shown in red and its position is shown in two perspectives of the viewing
+frustum in red also.
 
 ![env-depth.gif](img/env-depth.gif)
 
@@ -33,18 +37,19 @@ animation here: <http://youtu.be/eTPD1DZ-7fU>
 ### Collision
 
 The volcano environment has some obstacles that the player should not be able
-to shoot through.  To this end, this environment has simple collision polygons
+to shoot through.  Thus, this environment has simple collision polygons
 for blocking your bullets:
 
 ![env-collision](img/env-collision.gif)
 
-When a bullet crosses a layer's plane, it is blocked if its point of
-intersection is contained in any of the collision polygons for that layer.
+Mathematically, when a bullet crosses a layer's plane, it is blocked if its
+point of intersection is contained in any of the collision polygons for that
+layer.
 
 ### Parallax
 
 When tilting the phone, the layers close to the screen move slightly to create
-a parallax effect illustrated below:
+a parallax effect, illustrated below.
 
 ![env-parallax](img/env-parallax.gif)
 
@@ -53,24 +58,26 @@ a parallax effect illustrated below:
 ### Conversion
 
 As we discussed in a previous article, there is a long conversion process that
-our background assets must go through before they can be drawn by our engine.
+our background assets must go through before they can be displayed in our
+engine.
 
-Our artist draws all the layers in Adobe Illustrator (see below) and exports an
-SVG file to send to me.
+First, our artist draws all the layers in Adobe Illustrator (see below) and
+exports an SVG file to send to me.
 
 ![env-adobe](img/env-adobe.png)
 
-I then run it through an automated background converter that
-splits all the top-level groups of the SVG file into the engine's supported
-formats for each layer.
+Next, I run it through an automated background converter that splits all the
+top-level groups of the SVG file into separate layers.  Each SVG layer is dumped
+to a given directory, as well as converted to a Canvas Path image.
 
 ![env-workflow](img/env-workflow.png)
 
+Finally, the new background is primed and ready for customization.
+
 ### Customization
 
-After our new environment background is converted, we can start creating its
-layer depth, animation, collision, and parallax.  This is done from a tool I
-created called Baklava.  I chose that name because baklava has a lot of layers
-and is alliteratively similar to background.
+I created a tool for customizing each of our environment's layer depth,
+animation, collision, and parallax properties.  I called it Baklava,
+after the pie that has many layers.
 
 View this video for a demonstration of the tool.
