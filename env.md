@@ -88,3 +88,4 @@ depth, animation, collision, and parallax properties.
 #### Demo
 
 To learn more about how this tool is used, view this short demo video here:
+<http:/youtu.be/gLQTp4_BDoM>
