@@ -55,15 +55,30 @@ overdrawing pixel density.
 ### Memory
 
 Using vectors also saves us texture memory since we are just storing vertices
-and fill colors for the shapes.  Even though PNG and JPG bitmaps are very well
-compressed, they are decompressed when stored in video memory.
+and colors for the shapes.  Even though PNG and JPG bitmaps are very well
+compressed, they must be decompressed when stored in video memory.
+
+To visualize this, the memory usage of a bitmap texture is proportional to its
+area, whereas the memory usage of a vector texture is proportional to its
+perimeter.  You can see the memory usage in blue below.
+
+![texture-memory](img/texture-memory.png)
 
 ## Bitmap Workflow
 
 For the most part, the bitmaps used in the game are stored separately from one
-another, as distinct PNG images.  The bitmap texture dimensions in memory
-must always be a power of 2, so the textures are sized in such a way to minimize
-any wasted space when they are stored in memory.
+another, as distinct PNG images.
+
+### Sizing
+
+The bitmap texture dimensions in memory must always be a power of 2.  We can
+always skirt this restriction by adding empty padding to meet the next highest
+power of 2.  But to minimize wasted texture memory we must downscale our images
+to the nearest power of 2 or simply design them to be that size.
+
+This is what the grid of supported texture sizes looks like.
+
+![texture-size](img/texture-size.png)
 
 ### Packing
 
