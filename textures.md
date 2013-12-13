@@ -20,7 +20,7 @@ its type and any additional information required to parse it.
 There are two types of texture formats: bitmaps and vectors.  Let's look at
 their differences.
 
-### Composure
+### Composition
 
 Bitmaps (e.g. PNG, JPG) are the conventional textures that are composed of
 uniformly-sized squares called pixels.  Vector textures (e.g. SVG) are instead
