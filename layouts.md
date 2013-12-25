@@ -22,8 +22,9 @@ adaptable layout.  See some examples below:
 ## The Pinboard Tool
 
 The tool that we use to build these layouts is essentially a virtual pinboard.
-The selected element is shown with a blue border, and its "pin" is shown in
-red.
+The selected element is shown with a red border, and its "pin" is shown in
+blue.  The pins always stay in the same relative screen position (a percentage
+of the full width or height).
 
 ![layout-pinboard](img/layouts-pinboard.png)
 
