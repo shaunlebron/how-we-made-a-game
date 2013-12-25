@@ -22,7 +22,7 @@ process.  You can read our free-form [devblog here](http://hygoon.com/blog).
 - [X] [Textures (Vectors & Bitmaps)](textures.md)
 - [X] [Environment Backgrounds](env.md)
 - [X] [Menu and HUD layouts](layouts.md)
-- [ ] Aiming Mechanic
+- [ ] [Aiming Mechanic](aiming.md)
 - [ ] Gameplay Design
 - [ ] The tutorial
 - [ ] The surprise
