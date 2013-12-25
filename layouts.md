@@ -9,7 +9,7 @@ discussed with a specific tool for the job.
 ## Adapting to screen sizes
 
 For our layouts to adapt to different screen sizes, we use a property of our
-"billboards" that we discussed in the [drawing.md](drawing section).  Each
+"billboards" that we discussed in the [drawing section](drawing.md).  Each
 billboard has an anchor that we compute using "layout coordinates".  These
 layout coordinates are defined as a percentage of the full width or height of
 the screen.
