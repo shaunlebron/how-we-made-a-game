@@ -21,7 +21,7 @@ process.  You can read our free-form [devblog here](http://hygoon.com/blog).
 - [X] [Pterodactyl Paths](paths.md)
 - [X] [Textures (Vectors & Bitmaps)](textures.md)
 - [X] [Environment Backgrounds](env.md)
-- [ ] Menus
+- [ ] [Menu and HUD layouts](layouts.md)
 - [ ] Aiming Mechanic
 - [ ] Gameplay Design
 - [ ] The tutorial
