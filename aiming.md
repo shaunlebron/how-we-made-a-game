@@ -43,7 +43,7 @@ by the swiping motion, shown below:
 This angle narrows down our firing range to a "slice" of space (i.e. anything behind
 the line shown above).
 
-### 2nd Degree of Freedom
+### Target Angle
 
 The second degree of freedom is the "target angle" which controls the "pitch"
 of the projectile.  This is computed automatically by choosing the closest pterodactyl
