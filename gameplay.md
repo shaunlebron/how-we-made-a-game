@@ -10,27 +10,51 @@ and speed of your bullets was the only determing factor for how well you were
 doing in the game.  Frankly, this mechanic didn't have any excitement.  It was
 interesting in and of itself, but it made for very stale gameplay.
 
-## Adding the capture mechanic
+![gameplay-shoot](img/gameplay-shoot.png)
+
+## What was missing
 
 I realized that in this simple game, if the player dies, it was only because
 they weren't shooting fast enough.  I don't think that's a compelling enough
 reason to continue playing.
 
-I postulated that the player has to feel a sense that they could've done
-something better.  So I brainstormed different ways to force the player to make
-decisions about what they were doing, so that they could improve strategies for
-reaching better decisions in the game.
+![gameplay-thought1](img/gameplay-thought1.png)
 
-The capture mechanic was the method I settled on for creating these "decision
-moments" in the game.  You can either shoot or capture a pterodactyl.  You
-can frantically shoot them down as before, especially when there's too much
-on the screen.  But you can also methodically capture correct colored ones
-in order to improve your health.
+I postulated that at the end of a game, the player has to feel a sense that
+they could've done something better.  Instead of mindlessly shooting as fast as
+they could, there had to be some kind of decision to make-- something to make
+them think and reason about what they were doing.  In other words, there has to
+be an element of strategy that the player will want to improve in their
+play-throughs.
+
+![gameplay-thought2](img/gameplay-thought2.png)
+
+## The capture mechanic
+
+The capture mechanic was introduced to create these aforementioned "decision
+moments" in the game.  The player is presented with different colored eggs
+as part of a bounty for earning health.  You capture the correct colors
+to earn a point of health to help you survive more waves.
+
+![gameplay-bounty](img/gameplay-bounty.png)
+
+Capturing takes only one shot, so it's easier than shooting an enemy down.  But
+if you capture an incorrect color, the "cage" of pterodactyls captured for the
+current bounty is emptied, creating a potentially difficult situation to
+recover from.
+
+![gameplay-frenzy](img/gameplay-frenzy.png)
 
 The context switching between strategic capturing and frantic shooting created
-a much more interesting experience that encourages the player to choose wisely
-when to be calm and when to be frantic.  It's a decision strategy that enriched
-an otherwise dull experience.
+a much more interesting experience that encourages the player to choose when to
+be calm and when to be frantic.  It's a decision strategy that enriched an
+otherwise dull experience.
+
+![gameplay-thought3](img/gameplay-thought3.png)
+
+## Points
+
+(Talk about how to earn points)
 
 ## Attack Patterns
 
