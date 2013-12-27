@@ -54,7 +54,7 @@ otherwise dull experience.
 
 ## Points
 
-(Talk about how to earn points)
+![gameplay-points](img/gameplay-points.png)
 
 ## Attack Patterns
 
