@@ -52,10 +52,11 @@ otherwise dull experience.
 
 ![gameplay-thought3](img/gameplay-thought3.png)
 
-Interesting, you can make purposefully capture the wrong color to flush the
-bounty, perhaps to get a wider variety of colors to allow for a quicker health
-boost.  The price for doing so is only measured in the risk of dumping any of
-the captured pterodactyls on the screen.
+Interestingly, you can purposefully capture the wrong color to flush the
+bounty. One may be compelled to do this in order to get a wider variety of
+colors in the bounty to allow for a quicker health boost.  The price for doing
+this is only measured in the risk of dumping any of the captured pterodactyls
+on the screen.
 
 ## Points
 
