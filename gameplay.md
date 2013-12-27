@@ -78,11 +78,23 @@ It is perhaps interesting to note that you can shoot the pterodactyls before
 capturing them to get points. This point conversion measures the risk taken
 from extra time spent on capturing.
 
-## Attack Patterns
+## Spawning Pterodactyls
 
-(Talk about attack intervals)
+Each environment has a set of four preset pterodactyl colors (shown below).
+Two colors are associated with flaplings, and two colors are associated with
+adults:
+
+![gameplay-colors](img/gameplay-colors.png)
+
+Each environment also has a set of ten preset pterodactyl paths (shown below).  
 
 ![gameplay-paths](img/gameplay-paths.png)
+
+When it is time for a pterodactyl to show up on screen, it is given a random
+path from the set of ten presets, and it is given a random color from the set
+of four colors.
+
+## Attack Patterns
 
 ## Adjusting the difficulty
 
