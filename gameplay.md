@@ -82,6 +82,8 @@ from extra time spent on capturing.
 
 (Talk about attack intervals)
 
+![gameplay-paths](img/gameplay-paths.png)
+
 ## Adjusting the difficulty
 
 Designing a good difficulty curve is rather difficult.  The problem of
