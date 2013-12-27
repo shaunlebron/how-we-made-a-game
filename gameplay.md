@@ -80,26 +80,3 @@ game well in the beginning, creating a perception of progress early on.  Though
 this effect is lost in the later stages, I believe the saturation of level
 rotations is quelled by the difficulty and resulting desire for a breath of air
 between waves.
-
-## A personal note on creating a compelling game
-
-What follows is more of a philosophical peek into my thoughts on why I decided
-against achievements and other decorative tactics employed in game design.
-
-### Options for decorating a mechanic
-
-There seems to be many ways to make a simple game more compelling.  You can
-supplement it with an interesting narrative, engage the senses more with
-audiovisual embellishments, add another complementary game mechanic, add more
-concrete numbers/awards to focus compulsions of self-improvement, etc.
-
-### Defining Fun vs Compulsion
-
-I started with a simple goal of wanting to make the game more "fun".  But some
-of the options I started thinking about seemed more geared toward adding
-"compulsion".  That was when definitions started getting blurry.
-
-I have my own opinions on what roles our games should play in our society, as
-most others do.  So my own compass has steered me to rank the aforementioned
-options in terms of the type of behavior I think it will promote in its players
-and the type of nourishment that experience provides them.
