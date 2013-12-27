@@ -52,9 +52,30 @@ otherwise dull experience.
 
 ![gameplay-thought3](img/gameplay-thought3.png)
 
+Interesting, you can make purposefully capture the wrong color to flush the
+bounty, perhaps to get a wider variety of colors to allow for a quicker health
+boost.  The price for doing so is only measured in the risk of dumping any of
+the captured pterodactyls on the screen.
+
 ## Points
 
+I wanted to keep the points as a simple representation of the player's overall
+performance. To this end, there is no inflation due to streak bonuses or
+multiplier rewards. I didn't want point growth to become a primary driver in
+the game; I wanted point growth to simply represent the actions of the game.
+
 ![gameplay-points](img/gameplay-points.png)
+
+The flaplings take two hits to kill, and the adults take three hits to kill.
+You get 100 points for every hit.  You get twice the total hit points that you
+earned for that enemy once you kill them.  Flaplings and adults take one hit
+from a net to capture.  No points are earned from capturing.  This is to focus
+the incentive on earning health rather than points, and to remove any point
+incentive to juggle pterodactyls with the nets.
+
+It is perhaps interesting to note that you can shoot the pterodactyls before
+capturing them to get points. This point conversion measures the risk taken
+from extra time spent on capturing.
 
 ## Attack Patterns
 
