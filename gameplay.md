@@ -96,6 +96,17 @@ of four colors.
 
 ## Attack Patterns
 
+The game is split into waves of pterodactyls.  Each wave consists of five
+groups (colored below).  You can see a timeline of the first 15 waves below.  A
+dot corresponds to a pterodactyl being released.
+
+![gameplay-patterns](img/gameplay-patterns.png)
+
+The time between each pterodactyl and group decreases over time.  Each group in
+a wave is a constant number of pterodactyls more than the previous group.  This
+"group growth" cycles between 2,3,4 for successive waves.  The size of the
+first group for each wave grows by one every three waves.
+
 ## Adjusting the difficulty
 
 Designing a good difficulty curve is rather difficult.  The problem of
