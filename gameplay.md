@@ -112,18 +112,11 @@ first group for each wave grows by one every three waves.
 Designing a good difficulty curve is rather difficult.  The problem of
 balancing accessibility and pacing is probably best addressed by creating
 separate difficulty levels.  This may be something I continue experimenting
-with, but I settled on having an initially difficult game to encourage you to
-get better.  It seems to be designed well for someone with responsive motor
-skills who can connect their thoughts to their actions in the game.
-
-Super Hexagon comes to mind when trying to justify the initial difficulty.  But
-Hexagon is a very well designed game whose elements are certainly missing for
-Pterodactyl Attack.
+with, but I settled on having an initially difficult game to sacrifice some
+accessibility for better pacing.
 
 ## Changes in scenery
 
 The game changes scenery after every wave.  The effect serves the pacing of the
-game well in the beginning, creating a perception of progress early on.  Though
-this effect is lost in the later stages, I believe the saturation of level
-rotations is quelled by the difficulty and resulting desire for a breath of air
-between waves.
+game well in the beginning, creating a reminder of progress early on and a
+chance to breath while enjoying the scenic animations.
