@@ -120,3 +120,5 @@ accessibility for better pacing.
 The game changes scenery after every wave.  The effect serves the pacing of the
 game well in the beginning, creating a reminder of progress early on and a
 chance to breath while enjoying the scenic animations.
+
+![gameplay-scenery](img/gameplay-scenery.png)
