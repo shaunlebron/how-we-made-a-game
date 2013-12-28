@@ -2,6 +2,8 @@
 
 This section covers how we teach the player how to play the game.
 
+![flow-tutorial](img/flow-tutorial.png)
+
 ## The main menu
 
 The player actually cannot leave the Main Menu without learning how to shoot
@@ -17,13 +19,12 @@ of how to teach the player with clever level design, we decided to create a
 separate tutorial level, a sort of isolated environment for spelling out
 exactly how the mechanics work.
 
-## One step at time
+## Focusing
 
 The tutorial is composed of four small tests. Each will repeat with an
-audiovisual notification on what went wrong if the player failed.
-
-The arena is designed to be colorless and minimal so that all attention is
-focused on the pterodactyls flying at you.
+audiovisual notification on what went wrong if the player failed.  The arena is
+designed to be colorless and minimal so that all attention is focused on the
+pterodactyls flying at you.
 
 ### Hit Flaplings Twice
 
