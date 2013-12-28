@@ -16,7 +16,7 @@ process.  You can read our free-form [devblog here](http://hygoon.com/blog).
 - [X] [Quick Look](quick-look.md)
 - [X] [Operations](devops.md)
 - [X] [File Overview](files.md)
-- [X] [Core Flow and Architecture](architecture.md)
+- [X] [Flow](flow.md)
 - [X] [Drawing to the Screen](drawing.md)
 - [X] [Pterodactyl Paths](paths.md)
 - [X] [Textures (Vectors & Bitmaps)](textures.md)
