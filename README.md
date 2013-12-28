@@ -23,7 +23,7 @@ process.  You can read our free-form [devblog here](http://hygoon.com/blog).
 - [X] [Environment Backgrounds](env.md)
 - [X] [Menu and HUD layouts](layouts.md)
 - [X] [Aiming Mechanic](aiming.md)
-- [ ] [Gameplay Design](gameplay.md)
+- [X] [Gameplay Design](gameplay.md)
 - [ ] [The tutorial](tutorial.md)
 - [ ] The surprise
 - [ ] Stress and its impacts
