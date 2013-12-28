@@ -1,41 +1,42 @@
 # Tutorial Design
 
-Teaching the user how to play the game presents an interesting challenge that
-we will talk about here.
+This section covers how we teach the player how to play the game.
 
 ## The main menu
 
 The player actually cannot leave the Main Menu without learning how to shoot
-pterodactyls.  So it serves as a mini-introduction to the mechanic.
+pterodactyls.  So it serves as a mini-introduction to the mechanic.  Tapping on
+either of the pterodactyls shows a short instruction animation shown below:
+
+![tutorial-menu](img/tutorial-menu.gif)
 
 ## Deciding on a Tutorial Level
 
-There are some games that are very good at teaching the player how to play the
-game without explicitly tell them how to do so ([very good reference
-here](http://www.youtube.com/watch?v=8FpigqfcvlM)).  The design of the first
-levels plays a big role in easing the user into the game.  A well-designed
-intro level can cause a player to learn and experience things about the game in
-isolated manner to prepare them for harder levels later.
-
-We decided to create a separate tutorial level, a sort of isolated environment
-for spelling out exactly how the mechanics work, since there were only four
-things to learn.  And there is no level design to speak of.  The game is only
-driven by pterodactyl attack patterns over a mostly static background.
+Though there are [great examples](http://www.youtube.com/watch?v=8FpigqfcvlM)
+of how to teach the player with clever level design, we decided to create a
+separate tutorial level, a sort of isolated environment for spelling out
+exactly how the mechanics work.
 
 ## One step at time
 
 The tutorial is composed of four small tests. Each will repeat with an
 audiovisual notification on what went wrong if the player failed.
 
+The arena is designed to be colorless and minimal so that all attention is
+focused on the pterodactyls flying at you.
+
 ### Hit Flaplings Twice
+
+![tutorial-one](img/tutorial-one.png)
 
 ### Hit Adults Three Times
 
+![tutorial-two](img/tutorial-two.png)
+
 ### Capture a Pterodactyl
+
+![tutorial-three](img/tutorial-three.png)
 
 ### Earn Health by Capturing Correct Colors
 
-## No distractions
-
-The tutorial arena is designed to be colorless and minimal so that all
-attention is focused on the pterodactyls flying at you.
+![tutorial-four](img/tutorial-four.png)
