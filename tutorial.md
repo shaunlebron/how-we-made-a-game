@@ -26,18 +26,40 @@ audiovisual notification on what went wrong if the player failed.  The arena is
 designed to be colorless and minimal so that all attention is focused on the
 pterodactyls flying at you.
 
+## Health and Death
+
+To teach the player about health, they can get hit. If they get hit enough
+times they will die and be presented with a message "You died.  Try again."
+They will restart the current lesson.
+
 ### Hit Flaplings Twice
+
+The player is taught in this lesson that flaplings need to be hit with two
+bullets.
 
 ![tutorial-one](img/tutorial-one.png)
 
 ### Hit Adults Three Times
 
+The player is taught in this lesson that the adults are stronger and need to be
+hit with three bullets.
+
 ![tutorial-two](img/tutorial-two.png)
 
 ### Capture a Pterodactyl
 
+The player is taught in this lesson that they can capture pterodactyls by
+holding the net button while shooting.  If they kill the pterodactyl, the
+message blinks and a "wrong" sound plays and they are thrown another
+pterodactyl.
+
 ![tutorial-three](img/tutorial-three.png)
 
 ### Earn Health by Capturing Correct Colors
+
+The player is taught in this final lesson that they can only capture certain
+color pterodactyls.  The bounty shows the correct colored eggs.  If all colors
+are captured, they earn health.  If the wrong color is captured, the cage is
+dumped.
 
 ![tutorial-four](img/tutorial-four.png)
