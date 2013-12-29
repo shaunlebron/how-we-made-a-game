@@ -25,5 +25,5 @@ process.  You can read our free-form [devblog here](http://hygoon.com/blog).
 - [X] [Aiming Mechanic](aiming.md)
 - [X] [Gameplay Design](gameplay.md)
 - [X] [The tutorial](tutorial.md)
-- [ ] The surprise
+- [X] [The surprise](surprise.md)
 - [ ] Stress and its impacts
