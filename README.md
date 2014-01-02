@@ -1,6 +1,12 @@
 How we made a game
 ==================
 
+__NOTICE__: This was the old home of the Pterodactyl Attack articles.  They are now
+live at <http://pteroattack.com>, tracked at
+<http://github.com/shaunew/pteroattack.com>.
+
+-----
+
 We spent a long time making the game [Pterodactyl
 Attack](http://youtu.be/uDx9aQIYfP8?t=30s) from scratch with no experience.
 
