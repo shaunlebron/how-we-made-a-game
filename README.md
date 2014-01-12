@@ -1,8 +1,8 @@
 How we made a game
 ==================
 
-__NOTICE__: This was the old home of the Pterodactyl Attack articles.  They are now
-live at <http://pteroattack.com>, tracked at
+__NOTICE__: This was the old home of the Pterodactyl Attack articles.  They now
+live at <http://pteroattack.com>, tracked in the new repository at
 <http://github.com/shaunew/pteroattack.com>.
 
 -----
@@ -32,4 +32,3 @@ process.  You can read our free-form [devblog here](http://hygoon.com/blog).
 - [X] [Gameplay Design](gameplay.md)
 - [X] [The tutorial](tutorial.md)
 - [X] [The surprise](surprise.md)
-- [ ] Stress and its impacts

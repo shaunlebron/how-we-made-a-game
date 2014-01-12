@@ -1,1 +1,1 @@
-This section was moved to the [flow section](flow.md).
+This article now lives here: <http://pteroattack.com/#architecture>
